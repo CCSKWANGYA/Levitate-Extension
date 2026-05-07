@@ -1,0 +1,16 @@
+packages/server/src/**
+packages/client/src/**
+packages/*/node_modules/**
+packages/server/out/**
+node_modules/**
+.git/**
+.vscode/**
+*.ts
+tsconfig*.json
+tsconfig.tsbuildinfo
+esbuild.config.mts
+pnpm-workspace.yaml
+pnpm-lock.yaml
+test/**
+.planning/**
+biome.json

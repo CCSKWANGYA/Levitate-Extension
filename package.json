@@ -1,0 +1,100 @@
+{
+	"name": "levitate-extension",
+	"displayName": "Levitate-Extension",
+	"description": "Syntax highlighting and language support for the Levitate DSL",
+	"icon": "assets/icon.png",
+	"version": "1.0.0",
+	"publisher": "ChouChiu",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ChouChiu/Levitate-Extension"
+	},
+	"license": "MIT",
+	"engines": {
+		"vscode": "^1.118.0"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"activationEvents": [],
+	"main": "./dist/client/extension.js",
+	"contributes": {
+		"languages": [
+			{
+				"id": "levitate",
+				"aliases": [
+					"Levitate",
+					"lvt"
+				],
+				"extensions": [
+					".lvt"
+				],
+				"icon": {
+					"light": "./assets/icon.png",
+					"dark": "./assets/icon.png"
+				},
+				"configuration": "./packages/grammar/language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "levitate",
+				"scopeName": "source.lvt",
+				"path": "./packages/grammar/syntaxes/lvt.tmLanguage.json"
+			}
+		],
+		"configuration": {
+			"title": "Levitate",
+			"properties": {
+				"levitate.trace.server": {
+					"scope": "window",
+					"type": "string",
+					"enum": [
+						"off",
+						"messages",
+						"verbose"
+					],
+					"default": "off",
+					"description": "Trace the communication between VS Code and the language server."
+				},
+				"levitate.maxNumberOfProblems": {
+					"scope": "resource",
+					"type": "number",
+					"default": 100,
+					"description": "Controls the maximum number of problems produced by the Levitate language server."
+				}
+			}
+		}
+	},
+	"scripts": {
+		"build": "tsx esbuild.config.mts",
+		"watch": "tsx esbuild.config.mts --watch",
+		"package": "pnpm run build && pnpm dlx @vscode/vsce package --no-dependencies --allow-missing-repository",
+		"lint": "biome lint .",
+		"format": "biome format --write .",
+		"prepare": "npx husky"
+	},
+	"lint-staged": {
+		"*.{ts,js,mjs,mts,json,html,css}": "biome format --write"
+	},
+	"pnpm": {
+		"overrides": {
+			"glob": "^13.0.0"
+		},
+		"onlyBuiltDependencies": [
+			"@vscode/vsce-sign",
+			"esbuild",
+			"keytar"
+		]
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.4.14",
+		"@types/node": "^25.6.0",
+		"@types/vscode": "^1.118.0",
+		"@vscode/vsce": "^3.9.1",
+		"esbuild": "^0.24.2",
+		"lint-staged": "^17.0.2",
+		"tsx": "^4.21.0",
+		"typescript": "~5.5.4"
+	}
+}

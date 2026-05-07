@@ -1,0 +1,20 @@
+# Build script for test project
+var outputDir "./build"
+var version "1.0.0"
+
+import shulker.magick
+copy "%project.src%" "^outputDir%" true
+verm sminor
+echo "Building version %project.ver%..."
+
+check {env get enablePkg} pkgr zip make "^outputDir%" "./release.zip"
+
+# Expression with variable
+echo "Output: {path dir ^outputDir^}"
+
+# Escaped quotes in string
+echo "Hello \"World\""
+
+# REPL-only (should show diagnostic in script)
+exit
+task

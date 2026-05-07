@@ -1,0 +1,7 @@
+{
+	"displayName": "Levitate 扩展",
+	"description": "Levitate DSL (.lvt) 的语法高亮和语言支持",
+	"configuration.title": "Levitate",
+	"levitate.trace.server.description": "追踪 VS Code 与语言服务器之间的通信。",
+	"levitate.maxNumberOfProblems.description": "控制 Levitate 语言服务器产生的最大问题数。"
+}
