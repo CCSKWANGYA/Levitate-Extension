@@ -80,12 +80,7 @@
 	"pnpm": {
 		"overrides": {
 			"glob": "^13.0.0"
-		},
-		"onlyBuiltDependencies": [
-			"@vscode/vsce-sign",
-			"esbuild",
-			"keytar"
-		]
+		}
 	},
 	"devDependencies": {
 		"@biomejs/biome": "2.4.14",
