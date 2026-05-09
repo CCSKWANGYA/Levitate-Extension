@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Documentation / 文档
+    url: https://github.com/ChouChiu/Levitate-Extension#readme
+    about: Check the README for usage instructions and documentation / 查看 README 获取使用说明和文档
