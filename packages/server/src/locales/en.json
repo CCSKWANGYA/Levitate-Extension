@@ -92,7 +92,8 @@
 
 	"subcommand.get.description": "Gets a value.",
 	"subcommand.set.description": "Sets a value.",
-	"subcommand.add.description": "Adds an item to a list.",
+	"subcommand.add.description": "Adds an item to a list, or adds a Modrinth resource.",
+	"subcommand.a.description": "Short alias for add (Modrinth).",
 	"subcommand.remove.description": "Removes an item from a list.",
 	"subcommand.restore.description": "Restores a version to default.",
 	"subcommand.r.description": "Short alias for restore.",

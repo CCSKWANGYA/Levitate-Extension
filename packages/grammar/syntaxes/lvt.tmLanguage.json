@@ -91,8 +91,8 @@
 		"subcommand": {
 			"patterns": [
 				{
-					"name": "keyword.other.subcommand.lvt",
-					"match": "\\b(get|set|add|remove|list|restore|r|serialize|s|export|e|update|u|lock|unlock|clean|smajor|sminor|sfix|remapper|dir|isdir|match|replace|make|tear|zip|tar|start|stop|mono|info|chname|chroot|chout|show|create|lookup|commands|alias)\\b"
+					"name": "support.function.lvt",
+					"match": "\\b(get|set|add|a|remove|list|restore|r|serialize|s|export|e|update|u|lock|unlock|clean|smajor|sminor|sfix|remapper|dir|isdir|match|replace|make|tear|zip|tar|start|stop|mono|info|chname|chroot|chout|show|create|lookup|commands|alias)\\b"
 				}
 			]
 		},

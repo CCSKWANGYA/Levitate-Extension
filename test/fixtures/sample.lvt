@@ -3,6 +3,8 @@ var outputDir "./build"
 var version "1.0.0"
 
 import shulker.magick
+import shulker.modrinth
+
 copy "%project.src%" "^outputDir%" true
 verm sminor
 echo "Building version %project.ver%..."
@@ -14,6 +16,24 @@ echo "Output: {path dir ^outputDir^}"
 
 # Escaped quotes in string
 echo "Hello \"World\""
+
+# Mrp (Modrinth pack operations)
+mrp add sodium
+mrp a sodium
+mrp s src/mods
+mrp serialize src/mods
+mrp r src/mods
+mrp restore src/mods
+mrp e src/mods build
+mrp export src/mods build
+mrp u src/mods
+mrp update src/mods
+mrp lock sodium
+mrp unlock sodium
+mrp clean
+mrp info
+mrp lookup sodium
+mrp show
 
 # REPL-only (should show diagnostic in script)
 exit

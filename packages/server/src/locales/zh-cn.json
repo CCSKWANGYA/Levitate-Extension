@@ -92,7 +92,8 @@
 
 	"subcommand.get.description": "获取值。",
 	"subcommand.set.description": "设置值。",
-	"subcommand.add.description": "向列表中添加一项。",
+	"subcommand.add.description": "向列表中添加一项，或添加 Modrinth 资源。",
+	"subcommand.a.description": "add (Modrinth) 的简写别名。",
 	"subcommand.remove.description": "从列表中移除一项。",
 	"subcommand.restore.description": "将版本恢复为默认值。",
 	"subcommand.r.description": "restore 的简写别名。",
