@@ -48,11 +48,11 @@ graph LR
     Client -- "LSP connection" --> Server["Server\n(completion, diagnostics, hover)"]
 ```
 
-| Module | Path | Responsibility |
-| --- | --- | --- |
-| **Grammar** | `packages/grammar/` | TextMate grammar for syntax highlighting, language configuration (brackets, comments, etc.) |
-| **Client** | `packages/client/` | Extension entry point — activates the extension, starts the language server, registers commands |
-| **Server** | `packages/server/` | Language server — provides auto-completion, diagnostics, hover info, document symbols |
+| Module      | Path                | Responsibility                                                                                  |
+| ----------- | ------------------- | ----------------------------------------------------------------------------------------------- |
+| **Grammar** | `packages/grammar/` | TextMate grammar for syntax highlighting, language configuration (brackets, comments, etc.)     |
+| **Client**  | `packages/client/`  | Extension entry point — activates the extension, starts the language server, registers commands |
+| **Server**  | `packages/server/`  | Language server — provides auto-completion, diagnostics, hover info, document symbols           |
 
 ## Development Workflow
 
