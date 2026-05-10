@@ -32,10 +32,13 @@
 						{ "include": "#keywordRepl" },
 						{ "include": "#alias" },
 						{ "include": "#subcommand" },
+						{ "include": "#flag" },
+						{ "include": "#filePath" },
 						{ "include": "#expression" },
 						{ "include": "#envVar" },
 						{ "include": "#variable" },
-						{ "include": "#string" }
+						{ "include": "#string" },
+						{ "include": "#bareWord" }
 					]
 				}
 			]
@@ -115,6 +118,8 @@
 						{ "include": "#keywordScript" },
 						{ "include": "#keywordRepl" },
 						{ "include": "#subcommand" },
+						{ "include": "#flag" },
+						{ "include": "#filePath" },
 						{ "include": "#envVar" },
 						{ "include": "#variable" },
 						{ "include": "#string" },
@@ -128,6 +133,22 @@
 				{
 					"name": "entity.name.tag.lvt",
 					"match": "\\b\\w+\\b"
+				}
+			]
+		},
+		"flag": {
+			"patterns": [
+				{
+					"name": "variable.parameter.option.lvt",
+					"match": "--\\w+(-\\w+)*|-\\w+"
+				}
+			]
+		},
+		"filePath": {
+			"patterns": [
+				{
+					"name": "string.unquoted.path.lvt",
+					"match": "(?:\\.{1,2}[\\/\\\\])?[\\w.-]+(?:[\\/\\\\][\\w.\\-\\\\/]+)+"
 				}
 			]
 		},

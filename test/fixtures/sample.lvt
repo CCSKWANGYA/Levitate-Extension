@@ -20,6 +20,8 @@ echo "Hello \"World\""
 # Mrp (Modrinth pack operations)
 mrp add sodium
 mrp a sodium
+mrp add -f ./modlist.txt
+mrp a -f ./modlist.txt src/mods
 mrp s src/mods
 mrp serialize src/mods
 mrp r src/mods
