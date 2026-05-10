@@ -53,6 +53,8 @@ check {env get enablePkg} pkgr zip make "^outputDir%" "./release.zip"
 | `%project.ver%`    | 当前版本号   |
 | `%project.cache%`  | 项目缓存目录 |
 
+如需了解更多信息，请访问 https://docs.lipoly.ink/ShulkerRDK/quickGuides/
+
 ## 配置项
 
 | 设置                           | 默认值 | 说明               |

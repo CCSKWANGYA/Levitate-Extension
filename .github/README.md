@@ -53,6 +53,8 @@ check {env get enablePkg} pkgr zip make "^outputDir%" "./release.zip"
 | `%project.ver%`    | Current version string   |
 | `%project.cache%`  | Project cache directory  |
 
+For more information, please visit https://docs.lipoly.ink/ShulkerRDK/quickGuides/ (available in Simplified Chinese only)   
+
 ## Configuration
 
 | Setting                        | Default | Description                         |
