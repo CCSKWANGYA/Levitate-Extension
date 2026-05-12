@@ -74,6 +74,10 @@ check {env get enablePkg} pkgr zip make "^outputDir%" "./release.zip"
 
 本项目遵循[贡献者行为准则](CODE_OF_CONDUCT_ZH.md)。
 
+## 许可证
+
+代码：[MIT](../LICENSE) · [`assets/`](../assets/) 下图标：[保留所有权利](../LICENSE_ICON.txt)，作者 [LiPolymer](https://github.com/LiPolymer)。
+
 ## 致谢
 
-感谢 [ShulkerRDK](https://github.com/LiPolymer/ShulkerRDK) 以及 [图标](../assets/icon.svg) 的作者 [LiPolymer](https://github.com/LiPolymer)
+感谢 [ShulkerRDK](https://github.com/LiPolymer/ShulkerRDK) 以及[图标](../assets/icon.svg)的作者 [LiPolymer](https://github.com/LiPolymer)。
