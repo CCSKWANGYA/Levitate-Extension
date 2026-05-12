@@ -2,6 +2,8 @@
 
 This file provides guidance to AI coding agents (GitHub Copilot, Claude Code, etc.) when working with this repository.
 
+> READMEs under root are SymbolicLink
+
 ## Project Overview
 
 Levitate Extension is a VS Code extension for the Levitate DSL (`.lvt` files). Levitate is a build/task scripting language used by ShulkerRDK. The extension provides syntax highlighting, autocompletion, hover docs, document symbols, and diagnostics. See [README.md](README.md) for feature details and installation.
