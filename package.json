@@ -11,7 +11,7 @@
 	},
 	"license": "MIT",
 	"engines": {
-		"vscode": "^1.118.0"
+		"vscode": "^1.120.0"
 	},
 	"categories": [
 		"Programming Languages"
@@ -66,30 +66,31 @@
 			}
 		}
 	},
+	"workspaces": [
+		"packages/*"
+	],
 	"scripts": {
-		"build": "tsx esbuild.config.mts",
-		"watch": "tsx esbuild.config.mts --watch",
-		"package": "pnpm run build && pnpm dlx @vscode/vsce package --no-dependencies --allow-missing-repository",
+		"build": "bun esbuild.config.mts",
+		"watch": "bun esbuild.config.mts --watch",
+		"package": "bun run build && bun x @vscode/vsce package --no-dependencies --allow-missing-repository",
 		"lint": "biome lint .",
 		"format": "biome format --write .",
-		"prepare": "npx husky"
+		"prepare": "bun x husky"
 	},
 	"lint-staged": {
 		"*.{ts,js,mjs,mts,json,html,css}": "biome format --write"
 	},
-	"pnpm": {
-		"overrides": {
-			"glob": "^13.0.0"
-		}
-	},
 	"devDependencies": {
 		"@biomejs/biome": "2.4.15",
-		"@types/node": "^25.6.2",
-		"@types/vscode": "^1.118.0",
+		"@types/node": "^25.9.0",
+		"@types/vscode": "^1.120.0",
 		"@vscode/vsce": "^3.9.1",
 		"esbuild": "^0.28.0",
-		"lint-staged": "^17.0.4",
-		"tsx": "^4.21.0",
+		"lint-staged": "^17.0.5",
 		"typescript": "~6.0.3"
+	},
+	"packageManager": "bun@1.2.0",
+	"overrides": {
+		"glob": "^13.0.0"
 	}
 }
